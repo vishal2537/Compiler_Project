@@ -1,0 +1,5 @@
+// opt pass to generate callgraph
+opt --enable-new-pm=0 -analyze -dot-callgraph input.ll 
+
+// graphiz tools to generate graph png
+dot -Tpng input.ll.callgraph.dot > output.png

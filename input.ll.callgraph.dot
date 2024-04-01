@@ -1,0 +1,19 @@
+digraph "Call graph: input.ll" {
+	label="Call graph: input.ll";
+
+	Node0x12056a0 [shape=record,label="{DC}"];
+	Node0x1205750 [shape=record,label="{BC}"];
+	Node0x1205750 -> Node0x12056a0;
+	Node0x1205c40 [shape=record,label="{F}"];
+	Node0x1205d70 [shape=record,label="{E}"];
+	Node0x1205df0 [shape=record,label="{D}"];
+	Node0x1205fc0 [shape=record,label="{C}"];
+	Node0x1205fc0 -> Node0x1205df0;
+	Node0x1205fc0 -> Node0x1205d70;
+	Node0x1206070 [shape=record,label="{B}"];
+	Node0x1206070 -> Node0x1205fc0;
+	Node0x12060f0 [shape=record,label="{A}"];
+	Node0x12060f0 -> Node0x1206070;
+	Node0x12061a0 [shape=record,label="{main}"];
+	Node0x12061a0 -> Node0x12060f0;
+}
